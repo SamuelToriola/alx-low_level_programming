@@ -1,31 +1,19 @@
-#include main.h 
-/*
- * void print_alphabet(void)
-
-*
-*	int i;
-*
-*	i = 'a';
-*
-*	while (i <= 'z')
-*	{
-*		_putchar(i);
-*		i++;
-*	}
-*	_putchar('\n');
-
+#include <stdio.h>
+/**
+ * print_alphabet - the alphabet, in lowercase, followed by a new line.
  *
- *
- * */
+ * Return: Always 0 (Success)
+ */
+
 void print_alphabet(void)
 {
-char alphabet;
+	char alpha = 'a';
 
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-{
-_putchar(alphabet);
-}
-
-_putchar('\n');
+	while (alpha <= 'z')
+	{
+		putchar(alpha);
+		alpha++;
+	}
+	putchar('\n');
 
 }
