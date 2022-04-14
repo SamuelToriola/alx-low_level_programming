@@ -1,34 +1,35 @@
-nes (31 sloc)  465 Bytes
-   
-#include <stdio.h>
 #include "main.h"
 /**
- * jack_bauer - Prints the minutes of a day
- *
- * Return: no return
+ * jack_bauer - prints every minute of the day starting from 00:00 to 23:59
+ * main - prints out all minutes of the day from 00:00 till 23:59
+ * Return: no value
  */
+
 void jack_bauer(void)
 {
-	int a, b, c, d;
+	int i = 0, j = 0, k, l, f, s;
 
-	for (a = 48; a <= 50; a++)
+	while (i <= 23)
 	{
-		for (b = 48; b <= 57; b++)
+		while (j <= 59)
 		{
-			for (c = 48; c <= 53; c++)
+			s = j % 10;
+			f = j / 10;
+			l = i % 10;
+			k = i / 10;
+			_putchar(k + '0');
+			_putchar(l + '0');
+			_putchar(':');
+			_putchar(f + '0');
+			_putchar(s + '0');
+			_putchar('\n');
+			if (j == 59)
 			{
-				for (d = 48; d <= 57; d++)
-				{
-					if (a >= 50 && b >= 52)
-						break;
-					_putchar(a);
-					_putchar(b);
-					_putchar(58);
-					_putchar(c);
-					_putchar(d);
-					_putchar('\n');
-				}
+				j = 0;
+				break;
 			}
+			j++;
 		}
+		i++;
 	}
 }
