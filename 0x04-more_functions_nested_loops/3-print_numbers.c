@@ -11,11 +11,13 @@ void print_numbers(void)
 {
 	int i;
 
-	i = 0;
+	i = 48;
 
-      for  (i = 0;i < 10;i++)
+	while (i <= 57)
 	{
 		_putchar(i);
+		i++;
+
 	}
 	_putchar('\n');
 }
