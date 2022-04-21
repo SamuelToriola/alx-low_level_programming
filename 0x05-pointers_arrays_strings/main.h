@@ -1,4 +1,9 @@
-int positive_or_negative(int i);
-int largest_number(int a, int b, int c);
-void print_remaining_days(int month, int day, int year);
-int convert_day(int month, int day);
+int _putchar(char c);
+void reset_to_98(int *n);
+int _strlen(char *s);
+void swap_int(int *a, int *b);
+void _puts(char *str);
+void print_rev(char *s);
+void rev_string(char *s);
+void puts2(char *str);
+void puts_half(char *str);
