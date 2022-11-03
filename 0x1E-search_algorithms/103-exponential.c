@@ -18,16 +18,6 @@ void print_array(int *array, size_t l, size_t r)
 	}
 }
 
-/**
- * binary_search_index1 - Searches a value in a sorted array using \
- * a binary search.
- * @array: The array to search in.
- * @l: The left index of the array.
- * @r: The right index of the array.
- * @value: The value to look for.
- *
- * Return: The first index of the value in the array, otherwise -1.
- */
 int binary_search_index1(int *array, size_t l, size_t r, int value)
 {
 	size_t m;
