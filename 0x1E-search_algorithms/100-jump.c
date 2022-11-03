@@ -2,7 +2,7 @@
 #include "search_algos.h"
 
 /**
- * jump_search - Searches a value in a sorted array using a jump search.
+ * jump_search - searches a value in a sorted array using a jump search.
  * @array: The array to search in.
  * @size: The length of the array.
  * @value: The value to look for.
